@@ -176,4 +176,7 @@ async def sanity_check(user_login: UserLogin):
         raise HTTPException(status_code=401, detail="Invalid authentication")
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
-            
+
+@app.get("/test")
+def read_root():
+    return {"Hello": "World"}
