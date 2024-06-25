@@ -4,3 +4,4 @@ firebase-admin==6.1.0
 python-dotenv==1.0.0
 pydantic==1.10.8
 requests==2.31.0
+email-validator==1.1.3 
